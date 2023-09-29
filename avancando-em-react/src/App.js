@@ -1,7 +1,10 @@
 import "./App.css";
 import Dog2 from "./assets/dog2.jpg";
+import CarDetails from "./components/CarDetails";
+import ConditionalRender from "./components/ConditionalRender";
 import ListRender from "./components/ListRender";
 import ManageData from "./components/ManageData";
+import ShowUserName from "./components/ShowUserName";
 
 function App() {
   return (
@@ -17,6 +20,13 @@ function App() {
       </div>
       <ManageData />
       <ListRender />
+      <ConditionalRender />
+      {/* props */}
+      <ShowUserName name="Larissa"/>
+      {/* destructuring */}
+      <CarDetails name="Ferrari" color="Red" brand="Ferrari"/>
+      <CarDetails name="Volvo" color="Preto" brand="Volvo"/>
+      <CarDetails name="X6" color="White" brand="BMW"/>
     </div>
   );
 }
